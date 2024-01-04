@@ -1,3 +1,2 @@
 myenv
-hadoop_datanode
-hadoop_namenode
+__pycache__
