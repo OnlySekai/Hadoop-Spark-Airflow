@@ -16,6 +16,6 @@ if len(blocks):
         data = function(blocks)
         filename = f'{label[index]}-{last_block}.csv'
         write_to_hdfs(filename, data)
-    save_db(last_block+block_step, 400)
+    save_db(last_block+block_step, 100)
 else:
     print('No new blocks')

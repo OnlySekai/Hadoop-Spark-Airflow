@@ -1,6 +1,6 @@
-myenv
+myvenv
 __pycache__
-hadoop_datanode/*
-hadoop_namenode/*
-airflow/logs
-airflow/airflow.db
+hadoop_datanode
+hadoop_namenode
+airflow/dags/logs
+airflow/dags/airflow.db

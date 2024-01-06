@@ -27,13 +27,13 @@ run_script_tasks = [
     ) for i in range(1, 6)
 ]
 
-print_hello_task = BashOperator(
+group_trx = BashOperator(
     task_id='print_hello',
-    bash_command='echo hello',
+    bash_command='/Users/azoom/Desktop/project3/client/group_trx.sh ',
     dag=dag,
 )
 
 # Set dependencies
-for i in range(4):
+for i in range(3):
     run_script_tasks[i] >> run_script_tasks[i + 1]
-run_script_tasks[4] >> print_hello_task
+run_script_tasks[4] >> group_trx
