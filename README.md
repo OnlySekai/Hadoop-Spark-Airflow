@@ -40,7 +40,7 @@
 
 ## Run spark application
 
-1. change ```containerId``` in ```/crawler/run.sh``` by spark container id.
+1. change ```containerId``` in ```/client/run.sh``` by spark container id.
 
 1. change ```fileName``` in ```/client/run.sh``` by application want run.
 
